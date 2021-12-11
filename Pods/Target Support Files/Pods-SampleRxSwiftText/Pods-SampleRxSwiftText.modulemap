@@ -1,0 +1,6 @@
+framework module Pods_SampleRxSwiftText {
+  umbrella header "Pods-SampleRxSwiftText-umbrella.h"
+
+  export *
+  module * { export * }
+}
