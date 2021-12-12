@@ -13,6 +13,12 @@
 		BA1256ED27649C0F00C6351C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA1256EB27649C0F00C6351C /* Main.storyboard */; };
 		BA1256EF27649C0F00C6351C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA1256EE27649C0F00C6351C /* Assets.xcassets */; };
 		BA1256F227649C0F00C6351C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA1256F027649C0F00C6351C /* LaunchScreen.storyboard */; };
+		BA86E5812764B106000C25F1 /* TextFieldSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA86E5802764B106000C25F1 /* TextFieldSampleViewController.swift */; };
+		BA86E5832764BA48000C25F1 /* TextFieldSample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA86E5822764BA48000C25F1 /* TextFieldSample.storyboard */; };
+		BADF3F912764BD0D006710CA /* RxSwiftTextField.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BADF3F902764BD0D006710CA /* RxSwiftTextField.storyboard */; };
+		BADF3F932764BD26006710CA /* RxSwiftTextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADF3F922764BD26006710CA /* RxSwiftTextFieldViewController.swift */; };
+		BADF3F972765D607006710CA /* MapSample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BADF3F962765D607006710CA /* MapSample.storyboard */; };
+		BADF3F992765D618006710CA /* MapSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADF3F982765D618006710CA /* MapSampleViewController.swift */; };
 		F8B6AD2D34905D3334ADA5FC /* Pods_SampleRxSwiftText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 479434E66F53A3DEDBC0F33C /* Pods_SampleRxSwiftText.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +33,12 @@
 		BA1256EE27649C0F00C6351C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA1256F127649C0F00C6351C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA1256F327649C0F00C6351C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA86E5802764B106000C25F1 /* TextFieldSampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldSampleViewController.swift; sourceTree = "<group>"; };
+		BA86E5822764BA48000C25F1 /* TextFieldSample.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TextFieldSample.storyboard; sourceTree = "<group>"; };
+		BADF3F902764BD0D006710CA /* RxSwiftTextField.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RxSwiftTextField.storyboard; sourceTree = "<group>"; };
+		BADF3F922764BD26006710CA /* RxSwiftTextFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftTextFieldViewController.swift; sourceTree = "<group>"; };
+		BADF3F962765D607006710CA /* MapSample.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapSample.storyboard; sourceTree = "<group>"; };
+		BADF3F982765D618006710CA /* MapSampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSampleViewController.swift; sourceTree = "<group>"; };
 		E5E3BADE232B22492E7ACB72 /* Pods-SampleRxSwiftText.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleRxSwiftText.release.xcconfig"; path = "Target Support Files/Pods-SampleRxSwiftText/Pods-SampleRxSwiftText.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,13 +85,35 @@
 			children = (
 				BA1256E527649C0F00C6351C /* AppDelegate.swift */,
 				BA1256E727649C0F00C6351C /* SceneDelegate.swift */,
-				BA1256E927649C0F00C6351C /* ViewController.swift */,
-				BA1256EB27649C0F00C6351C /* Main.storyboard */,
+				BADF3F8F2764BC74006710CA /* Controller */,
+				BADF3F8E2764BC69006710CA /* View */,
 				BA1256EE27649C0F00C6351C /* Assets.xcassets */,
 				BA1256F027649C0F00C6351C /* LaunchScreen.storyboard */,
 				BA1256F327649C0F00C6351C /* Info.plist */,
 			);
 			path = SampleRxSwiftText;
+			sourceTree = "<group>";
+		};
+		BADF3F8E2764BC69006710CA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BA86E5822764BA48000C25F1 /* TextFieldSample.storyboard */,
+				BA1256EB27649C0F00C6351C /* Main.storyboard */,
+				BADF3F902764BD0D006710CA /* RxSwiftTextField.storyboard */,
+				BADF3F962765D607006710CA /* MapSample.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BADF3F8F2764BC74006710CA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BA86E5802764B106000C25F1 /* TextFieldSampleViewController.swift */,
+				BA1256E927649C0F00C6351C /* ViewController.swift */,
+				BADF3F922764BD26006710CA /* RxSwiftTextFieldViewController.swift */,
+				BADF3F982765D618006710CA /* MapSampleViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		DC8CE65AFC59025F78F5504E /* Pods */ = {
@@ -88,7 +122,6 @@
 				4CAAFE1E1BE1ADAE2749CCF0 /* Pods-SampleRxSwiftText.debug.xcconfig */,
 				E5E3BADE232B22492E7ACB72 /* Pods-SampleRxSwiftText.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -152,9 +185,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BADF3F912764BD0D006710CA /* RxSwiftTextField.storyboard in Resources */,
+				BA86E5832764BA48000C25F1 /* TextFieldSample.storyboard in Resources */,
 				BA1256F227649C0F00C6351C /* LaunchScreen.storyboard in Resources */,
 				BA1256EF27649C0F00C6351C /* Assets.xcassets in Resources */,
 				BA1256ED27649C0F00C6351C /* Main.storyboard in Resources */,
+				BADF3F972765D607006710CA /* MapSample.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,7 +243,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA86E5812764B106000C25F1 /* TextFieldSampleViewController.swift in Sources */,
 				BA1256EA27649C0F00C6351C /* ViewController.swift in Sources */,
+				BADF3F932764BD26006710CA /* RxSwiftTextFieldViewController.swift in Sources */,
+				BADF3F992765D618006710CA /* MapSampleViewController.swift in Sources */,
 				BA1256E627649C0F00C6351C /* AppDelegate.swift in Sources */,
 				BA1256E827649C0F00C6351C /* SceneDelegate.swift in Sources */,
 			);
